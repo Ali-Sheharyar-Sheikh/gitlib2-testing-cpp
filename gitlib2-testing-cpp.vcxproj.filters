@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="checkout-testing.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="fetch-testing.cpp">
+    <ClCompile Include="fetch-clone-stats.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

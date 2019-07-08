@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 	git_repository * repo = nullptr;
 
 	// Open the repository
-	int error = git_repository_open(&repo, R"(C:\Users\Alis\Documents\Visual Studio 2017\Projects\gitlib2-testing-cpp\clone-repo)");
+	int error = git_repository_open(&repo, "SanityGen-clone");
 	if (error < 0) {
 		const git_error *e = giterr_last();
 		printf("ERROR: %d/%d: %s\n", error, e->klass, e->message);
@@ -89,10 +89,10 @@ int fetch(git_repository *repo, int argc, char **argv)
 	const git_transfer_progress *stats;
 	git_fetch_options fetch_opts = GIT_FETCH_OPTIONS_INIT;
 
-	if (argc < 2) {
+	/*if (argc < 2) {
 		fprintf(stderr, "usage: %s fetch <repo>\n", argv[-1]);
 		return EXIT_FAILURE;
-	}
+	}*/
 
 	/* Figure out whether it's a named remote or a URL */
 	printf("Fetching %s for repo %p\n", "origin", repo);
