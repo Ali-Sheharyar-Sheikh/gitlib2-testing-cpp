@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="checkout-testing.cpp" />
     <ClCompile Include="fetch-testing.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
